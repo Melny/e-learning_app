@@ -1,24 +1,46 @@
 ﻿@inherits LayoutComponentBase
 
-<MudThemeProvider />
-<MudDialogProvider />
-<MudSnackbarProvider />
+<MudThemeProvider Theme="_civopTheme"/>
+<MudDialogProvider/>
+<MudSnackbarProvider/>
 
 <MudLayout>
-    <MudAppBar Elevation="0">
-        <MudIconButton Icon="@Icons.Material.Filled.Menu" Color="Color.Inherit" Edge="Edge.Start" OnClick="@((e) => DrawerToggle())" />
-        <MudSpacer />
-        <MudIconButton Icon="@Icons.Custom.Brands.MudBlazor" Color="Color.Inherit" Link="https://mudblazor.com/" Target="_blank" />
-        <MudIconButton Icon="@Icons.Custom.Brands.GitHub" Color="Color.Inherit" Link="https://github.com/MudBlazor/MudBlazor/" Target="_blank" />
+    <MudAppBar Elevation="0" Color="Color.Primary">
+        <MudIconButton Class="pr-8" Icon="@Icons.Material.Filled.Menu" Color="Color.Inherit" Edge="Edge.Start" OnClick="@((e) => DrawerToggle())"/>
+        <MudImage Src="images/civop_logo_white.svg" Width="140" Alt="Mony the dog" Class="pr-4"/>
+        <MudChip Icon="@Icons.Material.Filled.Person" Color="Color.Secondary" Label="true">Klientská sekce</MudChip>
+        <MudSpacer/>
+        
+        <MudAvatar Class="mr-4" Size="Size.Small" Image="images/avatar.png" />
+
+        <MudText Class="pr-8">Scania Czech Republic s.r.o.</MudText>
+        
+        <MudButton Class="pr-4" Href="https://github.com/MudBlazor/MudBlazor"
+                         Target="_blank"
+                         Variant="Variant.Text"
+                         EndIcon="@Icons.Material.Filled.Lock"
+                         Color="Color.Inherit"
+                         Style="text-transform:none"
+                         Disabled=@disabled>
+                  Změna hesla
+              </MudButton>
+        
+        <MudButton Href="https://github.com/MudBlazor/MudBlazor"
+                   Target="_blank"
+                   Variant="Variant.Text"
+                   EndIcon="@Icons.Material.Filled.Logout"
+                   Color="Color.Inherit"
+                   Style="text-transform:none"
+                   Disabled=@disabled>
+            Odhlásit
+        </MudButton>
+        
     </MudAppBar>
-    <MudDrawer @bind-Open="_drawerOpen" Elevation="1">
-        <MudDrawerHeader>
-            <MudText Typo="Typo.h6">elearning</MudText>
-        </MudDrawerHeader>
-        <NavMenu />
+    <MudDrawer @bind-Open="_drawerOpen" ClipMode="DrawerClipMode.Always" Elevation="25" Class="pt-8">
+        <NavMenu/>
     </MudDrawer>
     <MudMainContent>
-        <MudContainer MaxWidth="MaxWidth.Large" Class="my-16 pt-16">
+        <MudContainer MaxWidth="MaxWidth.False" Class="my-1 pa-8">
             @Body
         </MudContainer>
     </MudMainContent>
@@ -31,4 +53,17 @@
     {
         _drawerOpen = !_drawerOpen;
     }
+    
+    MudTheme _civopTheme = new MudTheme()
+    {
+        Palette = new Palette()
+        {
+            Primary = "#0a2878",
+            Secondary = "#f02d00"
+        },
+    };
+};
+
+@code{
+    bool disabled = false;
 }

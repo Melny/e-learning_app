@@ -1,7 +1,42 @@
 ﻿@page "/"
 
-<PageTitle>Index</PageTitle>
+<PageTitle>Úvodek</PageTitle>
 
-<MudText Typo="Typo.h3" GutterBottom="true">Hello, world!</MudText>
-<MudText Class="mb-8">Welcome to your new app, powered by MudBlazor!</MudText>
-<MudAlert Severity="Severity.Normal">You can find documentation and examples on our website here: <MudLink Href="https://mudblazor.com" Typo="Typo.body2" Color="Color.Inherit"><b>www.mudblazor.com</b></MudLink></MudAlert>
+<div Class="d-flex flex-wrap gap-4" Elevation="0">
+   
+    <MudCard Class="mb-4 flex-auto">
+        <MudCardMedia Image="images/christopher-burns-Wiu3w-99tNg-unsplash.jpg" Height="200" />
+        <MudCardContent>
+            <MudText Typo="Typo.h5" Class="pb-2">Praesent id justo in neque</MudText>
+            <MudText Typo="Typo.body2">Old paint found on a stone house door.</MudText>
+            <MudText Typo="Typo.body2">This photo was taken in a small village in Istra Croatia.</MudText>
+        </MudCardContent>
+        <MudCardActions>
+            <MudButton Variant="Variant.Text" Color="Color.Primary">Více informací</MudButton>
+        </MudCardActions>
+    </MudCard>
+
+    <MudCard Class="mb-4 flex-auto">
+        <MudCardMedia Image="images/AdobeStock_302471776.jpeg" Height="200" />
+        <MudCardContent>
+            <MudText Typo="Typo.h5">Morbi scelerisque luctus</MudText>
+            <MudText Typo="Typo.body2">Old paint found on a stone house door.</MudText>
+            <MudText Typo="Typo.body2">This photo was taken in a small village in Istra Croatia.</MudText>
+        </MudCardContent>
+        <MudCardActions>
+          <MudButton Variant="Variant.Text" Color="Color.Primary">Více informací</MudButton>
+        </MudCardActions>
+    </MudCard>
+
+    <MudCard Class="mb-4 flex-auto">
+        <MudCardMedia Image="images/AdobeStock_173842177.jpeg" Height="200" />
+        <MudCardContent>
+            <MudText Typo="Typo.h5">Vestibulum fermentum tortor</MudText>
+            <MudText Typo="Typo.body2">Old paint found on a stone house door.</MudText>
+            <MudText Typo="Typo.body2">This photo was taken in a small village in Istra Croatia.</MudText>
+        </MudCardContent>
+        <MudCardActions>
+         <MudButton Variant="Variant.Text" Color="Color.Primary">Více informací</MudButton>
+        </MudCardActions>
+    </MudCard>
+</div>
