@@ -1,6 +1,9 @@
 ﻿<MudNavMenu Bordered="true" Color="Color.Secondary" Margin="Margin.Normal">
     <MudNavLink Href="" Match="NavLinkMatch.All" Icon="@Icons.Material.Filled.Home">Úvod</MudNavLink>
-    <MudNavLink Href="studenti" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.People">Studenti</MudNavLink>
+    <MudNavGroup Title="Studenti" Icon="@Icons.Material.Filled.People">
+        <MudNavLink Href="studenti_prehled" Match="NavLinkMatch.Prefix">Přehled</MudNavLink>
+        <MudNavLink Href="studenti_vyzvy" Match="NavLinkMatch.Prefix">Odeslané výzvy</MudNavLink>
+    </MudNavGroup>
     <MudNavLink Href="pobocky" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.Business">Pobočky</MudNavLink>
     <MudNavLink Href="skoleni" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.School">Školení</MudNavLink>
     <MudNavLink Href="sprava" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.BusinessCenter">Správa pozic</MudNavLink>
