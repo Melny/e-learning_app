@@ -8,34 +8,20 @@
     <MudAppBar Elevation="0" Color="Color.Primary">
         <MudIconButton Class="pr-8" Icon="@Icons.Material.Filled.Menu" Color="Color.Inherit" Edge="Edge.Start" OnClick="@((e) => DrawerToggle())"/>
         <MudImage Src="images/civop_logo_white.svg" Width="140" Alt="Mony the dog" Class="pr-4"/>
-        <MudChip Icon="@Icons.Material.Filled.Person" Color="Color.Secondary" Label="true">Klientská sekce</MudChip>
+        <MudHidden Breakpoint="Breakpoint.SmAndDown">
+        <MudPaper Class="pb-1 pt-1 pl-2 pr-2 mud-theme-secondary">Klientská sekce</MudPaper>
+        </MudHidden>
         <MudSpacer/>
         
-        <MudAvatar Class="mr-4" Size="Size.Small" Image="images/avatar.png" />
+        <MudHidden Breakpoint="Breakpoint.SmAndDown">
+            <MudText Class="pr-8">Scania Czech Republic s.r.o.</MudText>
+        </MudHidden>
+        
+        <MudIconButton Icon="@Icons.Material.Filled.Lock" Color="Color.Inherit" Edge="Edge.Start" Class="mr-2" />
+        <MudIconButton Icon="@Icons.Material.Filled.Logout" Color="Color.Inherit" Edge="Edge.Start" />
 
-        <MudText Class="pr-8">Scania Czech Republic s.r.o.</MudText>
-        
-        <MudButton Class="pr-4" Href="https://github.com/MudBlazor/MudBlazor"
-                         Target="_blank"
-                         Variant="Variant.Text"
-                         EndIcon="@Icons.Material.Filled.Lock"
-                         Color="Color.Inherit"
-                         Style="text-transform:none"
-                         Disabled=@disabled>
-                  Změna hesla
-              </MudButton>
-        
-        <MudButton Href="https://github.com/MudBlazor/MudBlazor"
-                   Target="_blank"
-                   Variant="Variant.Text"
-                   EndIcon="@Icons.Material.Filled.Logout"
-                   Color="Color.Inherit"
-                   Style="text-transform:none"
-                   Disabled=@disabled>
-            Odhlásit
-        </MudButton>
-        
     </MudAppBar>
+    
     <MudDrawer @bind-Open="_drawerOpen" ClipMode="DrawerClipMode.Always" Elevation="25" Class="pt-8">
         <NavMenu/>
     </MudDrawer>
