@@ -1,7 +1,7 @@
 ﻿@page "/"
 
 <PageTitle>Civop - Klientská sekce</PageTitle>
-
+<MudText Typo="Typo.overline" Class="mb-4">ZÁKLADNÍ INFORMACE O CIVOP E-LEARNINGU</MudText>
 <MudGrid>
     <MudItem xs="12" sm="12" md="4" xl="4">
         <MudCard Class="mb-4">
@@ -46,49 +46,51 @@
 
 <div class="mt-4">
 
-    <MudText Typo="Typo.overline" Color="Color.Primary" Class="mb-4">PŘIPOJENÉ MODULY</MudText>
+    <MudText Typo="Typo.overline" Class="mb-4">PŘIPOJENÉ MODULY</MudText>
 
-<MudCard Outlined="true" Class="mb-4 d-flex gap-4 justify-space-between mud-border-primary">
-    <MudCardContent Class="d-flex gap-4 align-center">
-        <MudImage Src="images/worker.svg" Height="32"></MudImage>
-        <MudText Typo="Typo.body1" Color="Color.Primary" Class="pb-0">Bezpečnost práce</MudText>
-    </MudCardContent>
-    
-    <MudCardContent Class="d-flex gap-4 align-center">
-        <MudTooltip Text="Čeština" Color="Color.Primary" Placement="Placement.Top">
-            <MudImage Src="images/czech.svg" Class="mr-2"></MudImage>
-        </MudTooltip>
-        <MudTooltip Text="Angličtina" Color="Color.Primary" Placement="Placement.Top">
-            <MudImage Src="images/english.svg" Class="mr-2"></MudImage>
-        </MudTooltip>
-        <MudTooltip Text="Němčina" Color="Color.Primary" Placement="Placement.Top">
-            <MudImage Src="images/germany.svg" Class="mr-2"></MudImage>
-        </MudTooltip>
-        <MudTooltip Text="Přidat lokalizaci" Color="Color.Primary" Placement="Placement.Top">
-        <MudIconButton Icon="@Icons.Material.Filled.Add" aria-label="add" Color="Color.Primary" Size="Size.Medium" Class="ma-0 pa-2"></MudIconButton>
-         </MudTooltip>
-    </MudCardContent>
+    <MudCard Outlined="true" Class="mb-4 d-flex gap-4 justify-space-between mud-border-primary">
+        <MudCardContent Class="d-flex gap-4 align-center">
+            <MudPaper Class="pb-1 pt-1 pl-2 pr-2 mud-theme-success">Připojeno</MudPaper>
+            <MudImage Src="images/worker.svg" Height="32"></MudImage>
+            <MudText Typo="Typo.body1" Color="Color.Primary" Class="pb-0">Bezpečnost práce</MudText>
+        </MudCardContent>
+
+        <MudCardContent Class="d-flex gap-4 align-center">
+            <MudTooltip Text="Čeština" Color="Color.Primary" Placement="Placement.Top">
+                <MudImage Src="images/czech.svg" Class="mr-2 mt-2"></MudImage>
+            </MudTooltip>
+            <MudTooltip Text="Angličtina" Color="Color.Primary" Placement="Placement.Top">
+                <MudImage Src="images/english.svg" Class="mr-2 mt-2"></MudImage>
+            </MudTooltip>
+            <MudTooltip Text="Němčina" Color="Color.Primary" Placement="Placement.Top">
+                <MudImage Src="images/germany.svg" Class="mr-2 mt-2"></MudImage>
+            </MudTooltip>
+            <MudTooltip Text="Přidat lokalizaci" Color="Color.Primary" Placement="Placement.Top">
+                <MudIconButton Icon="@Icons.Material.Filled.Add" aria-label="add" Color="Color.Primary" Size="Size.Medium" Class="ma-0 pa-2"></MudIconButton>
+            </MudTooltip>
+        </MudCardContent>
 </MudCard>
 
 <MudCard Outlined="true" Class="mb-4 d-flex gap-4 justify-space-between mud-border-primary">
     <MudCardContent Class="d-flex gap-4 align-center">
+        <MudPaper Class="pb-1 pt-1 pl-2 pr-2 mud-theme-success">Připojeno</MudPaper>
         <MudImage Src="images/fire.svg" Height="32"></MudImage>
         <MudText Typo="Typo.body1" Color="Color.Primary" Class="pb-0">Požární ochrana</MudText>
     </MudCardContent>
     
     <MudCardContent Class="d-flex gap-4 align-center">
         <MudTooltip Text="Čeština" Color="Color.Primary" Placement="Placement.Top">
-                    <MudImage Src="images/czech.svg" Class="mr-2"></MudImage>
-                </MudTooltip>
-                <MudTooltip Text="Angličtina" Color="Color.Primary" Placement="Placement.Top">
-                    <MudImage Src="images/english.svg" Class="mr-2"></MudImage>
-                </MudTooltip>
-                <MudTooltip Text="Němčina" Color="Color.Primary" Placement="Placement.Top">
-                    <MudImage Src="images/germany.svg" Class="mr-2"></MudImage>
-                </MudTooltip>
-                <MudTooltip Text="Přidat lokalizaci" Color="Color.Primary" Placement="Placement.Top">
-                <MudIconButton Icon="@Icons.Material.Filled.Add" aria-label="add" Color="Color.Primary" Size="Size.Medium" Class="ma-0 pa-2"></MudIconButton>
-                 </MudTooltip>
+            <MudImage Src="images/czech.svg" Class="mr-2 mt-2"></MudImage>
+        </MudTooltip>
+        <MudTooltip Text="Angličtina" Color="Color.Primary" Placement="Placement.Top">
+            <MudImage Src="images/english.svg" Class="mr-2 mt-2"></MudImage>
+        </MudTooltip>
+        <MudTooltip Text="Němčina" Color="Color.Primary" Placement="Placement.Top">
+            <MudImage Src="images/germany.svg" Class="mr-2 mt-2"></MudImage>
+        </MudTooltip>
+        <MudTooltip Text="Přidat lokalizaci" Color="Color.Primary" Placement="Placement.Top">
+            <MudIconButton Icon="@Icons.Material.Filled.Add" aria-label="add" Color="Color.Primary" Size="Size.Medium" Class="ma-0 pa-2"></MudIconButton>
+        </MudTooltip>
     </MudCardContent>
 </MudCard>
 </div>
