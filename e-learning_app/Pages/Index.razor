@@ -1,13 +1,12 @@
 ﻿@page "/"
 
 <PageTitle>Civop - Klientská sekce</PageTitle>
-<MudText Typo="Typo.overline" Class="mb-4">ZÁKLADNÍ INFORMACE O CIVOP E-LEARNINGU</MudText>
+<MudText Typo="Typo.overline" Class="mb-4">NOVINKY A ZÁKLADNÍ INFORMACE</MudText>
 <MudGrid>
     <MudItem xs="12" sm="12" md="4" xl="4">
-        <MudCard Class="mb-4">
-            <MudCardMedia Image="images/slider_image_1.jpg" Height="200" />
-            <MudCardContent>
-                <MudText Typo="Typo.h5" Class="pb-2">Základní nastavení aplikace</MudText>
+        <MudCard Class="mb-4" Outlined="true">
+            <MudCardContent Class="pb-1">
+                <MudText Typo="Typo.h5" Class="pb-2">Informace o CIVOP s.r.o.</MudText>
                 <MudText Typo="Typo.body2">Nam quis nulla. Praesent in mauris eu tortor porttitor accumsan. Pellentesque pretium lectus id turpis.</MudText>
             </MudCardContent>
             <MudCardActions>
@@ -17,10 +16,13 @@
     </MudItem>
     
     <MudItem xs="12" sm="12" md="4" xl="4">
-        <MudCard Class="mb-4">
-            <MudCardMedia Image="images/slider_image_2.jpg" Height="200" />
-            <MudCardContent>
-                <MudText Typo="Typo.h5" Class="pb-2">Informace pro zaměstnance</MudText>
+        <MudCard Class="mb-4" Outlined="true">
+            <MudCardContent Class="pb-1">
+                <div class="d-flex gap-4 align-center flex-grow-1">
+                    <MudText Typo="Typo.h5" Class="pb-2">Modul Práce ve výškách</MudText>
+                    <MudPaper Class="pb-1 pt-1 pl-2 pr-2 mb-2 mud-theme-secondary">Novinka</MudPaper>
+                </div>
+                
                 <MudText Typo="Typo.body2">Nam quis nulla. Praesent in mauris eu tortor porttitor accumsan. Pellentesque pretium lectus id turpis.</MudText>
             </MudCardContent>
             <MudCardActions>
@@ -30,10 +32,13 @@
     </MudItem>
     
     <MudItem xs="12" sm="12" md="4" xl="4">
-        <MudCard Class="mb-4">
-            <MudCardMedia Image="images/slider_image_3.jpg" Height="200" />
-            <MudCardContent>
-                <MudText Typo="Typo.h5" Class="pb-2">Novinky v roce 2022</MudText>
+        <MudCard Class="mb-4" Outlined="true">
+            <MudCardContent Class="pb-1">
+                <div class="d-flex gap-4 align-center flex-grow-1">
+                    <MudText Typo="Typo.h5" Class="pb-2">Modul Home office</MudText>
+                    <MudPaper Class="pb-1 pt-1 pl-2 pr-2 mb-2 mud-theme-secondary">Novinka</MudPaper>
+                </div>
+                
                 <MudText Typo="Typo.body2">Nam quis nulla. Praesent in mauris eu tortor porttitor accumsan. Pellentesque pretium lectus id turpis.</MudText>
             </MudCardContent>
             <MudCardActions>
@@ -219,7 +224,34 @@
     </MudCard>
 </div>
 
-<MudDivider></MudDivider>
+<MudDivider Class="mb-4"></MudDivider>
+
+<MudGrid>
+    <MudItem xs="6">
+        <MudCard Class="mb-4" Outlined="true">
+            <MudCardContent Class="d-flex flex-column gap-1">
+                <MudText Typo="Typo.caption" Class="pb-2">NÁVODY</MudText>
+                <MudLink>Návody pro admistrátora</MudLink>
+                <MudLink>Návody správy pozic</MudLink>
+                <MudLink>Návody směrnic</MudLink>
+            </MudCardContent>
+        </MudCard>
+    </MudItem>
+    
+    <MudItem xs="6">
+        <MudCard Class="mb-4" Outlined="true">
+            <MudCardContent Class="d-flex flex-column gap-1">
+                <MudText Typo="Typo.caption" Class="pb-2">KONTAKT</MudText>
+                <MudText Typo="Typo.body2" Class="pb-2">Administátor E-learningu</MudText>
+                <MudLink>+420 737 205 107</MudLink>
+                <MudLink>elearning@civop.cz</MudLink>
+            </MudCardContent>
+        </MudCard>
+    </MudItem>
+    
+</MudGrid>
+
+
 
 @code{
     bool disabled = false;
