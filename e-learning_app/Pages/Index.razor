@@ -1,56 +1,59 @@
 ﻿@page "/"
 
 <PageTitle>Civop - Klientská sekce</PageTitle>
-<MudText Typo="Typo.overline" Class="mb-4">NOVINKY A ZÁKLADNÍ INFORMACE</MudText>
-<MudGrid>
-    <MudItem xs="12" sm="12" md="4" xl="4">
-        <MudCard Class="mb-4">
-            <MudCardMedia Image="images/slider_image_2.jpg" Height="132" />
-            <MudCardContent Class="pb-1">
-                <MudText Typo="Typo.h6" Class="pb-2">Informace o CIVOP s.r.o.</MudText>
-                <MudText Typo="Typo.body2">Nam quis nulla. Praesent in mauris eu tortor porttitor accumsan. Pellentesque pretium lectus id turpis.</MudText>
-            </MudCardContent>
-            <MudCardActions>
-                <MudButton Variant="Variant.Text" Color="Color.Primary">Více informací</MudButton>
-            </MudCardActions>
-        </MudCard>
-    </MudItem>
-    
-    <MudItem xs="12" sm="12" md="4" xl="4">
-        <MudCard Class="mb-4">
-            <MudCardMedia Image="images/slider_image_1.jpg" Height="132" />
-            <MudCardContent Class="pb-1">
-                <div class="d-flex gap-4 align-center flex-grow-1">
-                    <MudText Typo="Typo.h6" Class="pb-2">Modul Práce ve výškách</MudText>
-                    <MudPaper Class="pb-1 pt-1 pl-2 pr-2 mb-2 mud-theme-secondary">Novinka</MudPaper>
-                </div>
 
-                <MudText Typo="Typo.body2">Nam quis nulla. Praesent in mauris eu tortor porttitor accumsan. Pellentesque pretium lectus id turpis.</MudText>
-            </MudCardContent>
-            <MudCardActions>
-                <MudButton Variant="Variant.Text" Color="Color.Primary">Více informací</MudButton>
-            </MudCardActions>
-        </MudCard>
-    </MudItem>
+<MudCarousel Class="mud-width-full mb-8 rounded-lg"  Style="height:488px;" ShowArrows="@arrows" ShowBullets="false" EnableSwipeGesture="@enableSwipeGesture" AutoCycle="@autocycle" TData="object">
+    <MudCarouselItem Transition="transition" Color="@Color.Primary">
+        <MudCardMedia Image="images/info.jpg" Height="300" />
+        <div class="d-flex gap-4 align-center flex-grow-1 ml-8 mt-6 mb-2">
+            <MudImage Src="images/info_inherit.svg" Height="24"></MudImage>
+            <MudText Typo="Typo.h5" Color="Color.Inherit">Informace o společnosti CIVOP s.r.o.</MudText>
+        </div>
+        <MudText Typo="Typo.body2" Style="max-width: 900px;" Color="Color.Inherit" Class="ml-8 mb-5">Vestibulum fermentum tortor id mi. Etiam sapien elit, consequat eget, tristique non, venenatis quis, ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</MudText>
+        <MudButton Variant="Variant.Outlined" Color="Color.Inherit" Class="ml-8">Zjistit více</MudButton>
+    </MudCarouselItem>
     
-    <MudItem xs="12" sm="12" md="4" xl="4">
-        <MudCard Class="mb-4">
-            <MudCardMedia Image="images/slider_image_3.jpg" Height="132" />
-            <MudCardContent Class="pb-1">
-                <div class="d-flex gap-4 align-center flex-grow-1">
-                    <MudText Typo="Typo.h6" Class="pb-2">Modul Home office</MudText>
-                    <MudPaper Class="pb-1 pt-1 pl-2 pr-2 mb-2 mud-theme-secondary">Novinka</MudPaper>
-                </div>
+    <MudCarouselItem Transition="transition" Color="@Color.Primary">
+            <MudCardMedia Image="images/first_aid.jpg" Height="300" />
+            <div class="d-flex gap-4 align-center flex-grow-1 ml-8 mt-6 mb-2">
+                <MudImage Src="images/aid_inherit.svg" Height="24"></MudImage>
+                <MudText Typo="Typo.h5" Color="Color.Inherit">První pomoc</MudText>
+            </div>
+        <MudText Typo="Typo.body2" Style="max-width: 900px;" Color="Color.Inherit" Class="ml-8 mb-5">Vestibulum fermentum tortor id mi. Etiam sapien elit, consequat eget, tristique non, venenatis quis, ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</MudText>
+            <MudButton Variant="Variant.Outlined" Color="Color.Inherit" Class="ml-8">Zjistit více</MudButton>
+            </MudCarouselItem>
+    
+    <MudCarouselItem Transition="transition" Color="@Color.Primary">
+        <MudCardMedia Image="images/chemical.jpg" Height="300" />
+        <div class="d-flex gap-4 align-center flex-grow-1 ml-8 mt-6 mb-2">
+            <MudImage Src="images/chemical_inherit.svg" Height="24"></MudImage>
+            <MudText Typo="Typo.h5" Color="Color.Inherit">Chemické látky a směsi</MudText>
+        </div>
+        <MudText Typo="Typo.body2" Style="max-width: 900px;" Color="Color.Inherit" Class="ml-8 mb-5">Vestibulum fermentum tortor id mi. Etiam sapien elit, consequat eget, tristique non, venenatis quis, ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</MudText>
+        <MudButton Variant="Variant.Outlined" Color="Color.Inherit" Class="ml-8">Zjistit více</MudButton>
+    </MudCarouselItem>
+    
+    <MudCarouselItem Transition="transition" Color="@Color.Primary">
+        <MudCardMedia Image="images/heights.jpg" Height="300" />
+        <div class="d-flex gap-4 align-center flex-grow-1 ml-8 mt-6 mb-2">
+            <MudImage Src="images/ladder_inherit.svg" Height="24"></MudImage>
+            <MudText Typo="Typo.h5" Color="Color.Inherit">Práce ve výškách</MudText>
+        </div>
+        <MudText Typo="Typo.body2" Style="max-width: 900px;" Color="Color.Inherit" Class="ml-8 mb-5">Vestibulum fermentum tortor id mi. Etiam sapien elit, consequat eget, tristique non, venenatis quis, ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</MudText>
+        <MudButton Variant="Variant.Outlined" Color="Color.Inherit" Class="ml-8">Zjistit více</MudButton>
+    </MudCarouselItem>
+    
+    <MudCarouselItem Transition="transition" Color="@Color.Primary">
+        <MudCardMedia Image="images/homeoffice.jpg" Height="300" />
+            <div class="d-flex gap-4 align-center flex-grow-1 ml-8 mt-6 mb-2">
+                <MudImage Src="images/home_inherit.svg" Height="24"></MudImage>
+                <MudText Typo="Typo.h5" Color="Color.Inherit">Homeoffice</MudText>
+            </div>
+        <MudText Typo="Typo.body2" Style="max-width: 900px;" Color="Color.Inherit" Class="ml-8 mb-5">Vestibulum fermentum tortor id mi. Etiam sapien elit, consequat eget, tristique non, venenatis quis, ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</MudText>
+            <MudButton Variant="Variant.Outlined" Color="Color.Inherit" Class="ml-8">Zjistit více</MudButton>
+        </MudCarouselItem>
+</MudCarousel>
 
-                <MudText Typo="Typo.body2">Nam quis nulla. Praesent in mauris eu tortor porttitor accumsan. Pellentesque pretium lectus id turpis.</MudText>
-            </MudCardContent>
-            <MudCardActions>
-                <MudButton Variant="Variant.Text" Color="Color.Primary">Více informací</MudButton>
-            </MudCardActions>
-        </MudCard>
-    </MudItem>
-    
-</MudGrid>
 
 <div class="mt-4">
 
@@ -70,11 +73,7 @@
             <MudTooltip Text="Angličtina" Color="Color.Primary" Placement="Placement.Top">
                 <MudImage Src="images/english.svg" Class="mr-2 mt-2"></MudImage>
             </MudTooltip>
-            <MudTooltip Text="Němčina" Color="Color.Primary" Placement="Placement.Top">
-                <MudImage Src="images/germany.svg" Class="mr-2 mt-2"></MudImage>
-            </MudTooltip>
             <MudTooltip Text="Přidat lokalizaci" Color="Color.Primary" Placement="Placement.Top">
-                <MudIconButton Icon="@Icons.Material.Filled.Add" aria-label="add" Color="Color.Primary" Size="Size.Medium" Class="ma-0 pa-2"></MudIconButton>
             </MudTooltip>
         </MudCardContent>
 </MudCard>
@@ -93,11 +92,7 @@
         <MudTooltip Text="Angličtina" Color="Color.Primary" Placement="Placement.Top">
             <MudImage Src="images/english.svg" Class="mr-2 mt-2"></MudImage>
         </MudTooltip>
-        <MudTooltip Text="Němčina" Color="Color.Primary" Placement="Placement.Top">
-            <MudImage Src="images/germany.svg" Class="mr-2 mt-2"></MudImage>
-        </MudTooltip>
         <MudTooltip Text="Přidat lokalizaci" Color="Color.Primary" Placement="Placement.Top">
-            <MudIconButton Icon="@Icons.Material.Filled.Add" aria-label="add" Color="Color.Primary" Size="Size.Medium" Class="ma-0 pa-2"></MudIconButton>
         </MudTooltip>
     </MudCardContent>
 </MudCard>
@@ -106,154 +101,363 @@
 <div class="mt-8">
     <MudText Typo="Typo.overline" Class="mb-4 mt-12">NABÍDKA MODULŮ</MudText>
 
-    <MudCard Outlined="true" Class="mb-4 d-flex gap-4 justify-space-between">
-        <MudCardContent Class="d-flex gap-4 align-center">
-            <MudImage Src="images/ladder.svg" Height="32"></MudImage>
-            <MudText Typo="Typo.body1" Class="pb-0">Práce ve výškách</MudText>
-        </MudCardContent>
+    <MudGrid>
+        <MudItem xs="6">
+            <MudCard Outlined="true" Class="d-flex gap-4 justify-space-between">
+                <MudCardContent Class="d-flex gap-4 align-center">
+                    <MudImage Src="images/worker_black.svg" Height="32"></MudImage>
+                    <MudText Typo="Typo.body1" Class="pb-0">Bezpečnost práce</MudText>
+                </MudCardContent>
+                
+                <MudCardContent Class="d-flex gap-4 align-center">
+                    <MudImage Src="images/germany.svg" Class="mr-2"></MudImage>
+                    <MudButton Href="#"
+                               Target="_blank"
+                               Variant="Variant.Text"
+                               StartIcon="@Icons.Material.Filled.Info"
+                               Style="text-transform:none"
+                               Size="Size.Small"
+                               Disabled=@disabled>
+                        Zjistit více
+                    </MudButton>
+                    <MudButton Variant="Variant.Outlined">Objednat</MudButton>
+                </MudCardContent>
+            </MudCard>
+        </MudItem> 
+        
+        <MudItem xs="6">
+            <MudCard Outlined="true" Class="d-flex gap-4 justify-space-between">
+                <MudCardContent Class="d-flex gap-4 align-center">
+                    <MudImage Src="images/fire_black.svg" Height="32"></MudImage>
+                    <MudText Typo="Typo.body1" Class="pb-0">Požární ochrana</MudText>
+                </MudCardContent>
+                                    
+                <MudCardContent Class="d-flex gap-4 align-center">
+                    <MudImage Src="images/germany.svg" Class="mr-2"></MudImage>
+                    <MudButton Href="#"
+                               Target="_blank"
+                               Variant="Variant.Text"
+                               StartIcon="@Icons.Material.Filled.Info"
+                               Style="text-transform:none"
+                               Size="Size.Small"
+                               Disabled=@disabled>
+                        Zjistit více
+                    </MudButton>
+                    <MudButton Variant="Variant.Outlined">Objednat</MudButton>
+                </MudCardContent>
+            </MudCard>
+        </MudItem>
+        
+        <MudItem xs="6">
+            <MudCard Outlined="true" Class="d-flex gap-4 justify-space-between">
+                <MudCardContent Class="d-flex gap-4 align-center">
+                    <MudImage Src="images/truck.svg" Height="32"></MudImage>
+                    <MudText Typo="Typo.body1" Class="pb-0">Řidiči</MudText>
+                </MudCardContent>
+                        
+                <MudCardContent Class="d-flex gap-4 align-center">
+                    <MudImage Src="images/czech.svg" Class="mr-2"></MudImage>
+                    <MudButton Href="#"
+                               Target="_blank"
+                               Variant="Variant.Text"
+                               StartIcon="@Icons.Material.Filled.Info"
+                               Style="text-transform:none"
+                               Size="Size.Small"
+                               Disabled=@disabled>
+                        Zjistit více
+                    </MudButton>
+                    <MudButton Variant="Variant.Outlined">Objednat</MudButton>
+                </MudCardContent>
+            </MudCard>
+        </MudItem> 
+        
+        <MudItem xs="6">
+            <MudCard Outlined="true" Class="d-flex gap-4 justify-space-between">
+                <MudCardContent Class="d-flex gap-4 align-center">
+                    <MudImage Src="images/truck.svg" Height="32"></MudImage>
+                    <MudText Typo="Typo.body1" Class="pb-0">Řidiči</MudText>
+                </MudCardContent>
+                                            
+                <MudCardContent Class="d-flex gap-4 align-center">
+                    <MudImage Src="images/english.svg" Class="mr-2"></MudImage>
+                    <MudButton Href="#"
+                               Target="_blank"
+                               Variant="Variant.Text"
+                               StartIcon="@Icons.Material.Filled.Info"
+                               Style="text-transform:none"
+                               Size="Size.Small"
+                               Disabled=@disabled>
+                        Zjistit více
+                    </MudButton>
+                    <MudButton Variant="Variant.Outlined">Objednat</MudButton>
+                </MudCardContent>
+            </MudCard>
+        </MudItem> 
+        
+        <MudItem xs="6">
+            <MudCard Outlined="true" Class="d-flex gap-4 justify-space-between">
+                <MudCardContent Class="d-flex gap-4 align-center">
+                    <MudImage Src="images/truck.svg" Height="32"></MudImage>
+                    <MudText Typo="Typo.body1" Class="pb-0">Řidiči</MudText>
+                </MudCardContent>
+                                                                
+                <MudCardContent Class="d-flex gap-4 align-center">
+                    <MudImage Src="images/germany.svg" Class="mr-2"></MudImage>
+                    <MudButton Href="#"
+                               Target="_blank"
+                               Variant="Variant.Text"
+                               StartIcon="@Icons.Material.Filled.Info"
+                               Style="text-transform:none"
+                               Size="Size.Small"
+                               Disabled=@disabled>
+                        Zjistit více
+                    </MudButton>
+                    <MudButton Variant="Variant.Outlined">Objednat</MudButton>
+                </MudCardContent>
+            </MudCard>
+        </MudItem> 
+        
+        <MudItem xs="6">
+            <MudCard Outlined="true" Class="d-flex gap-4 justify-space-between">
+                <MudCardContent Class="d-flex gap-4 align-center">
+                    <MudImage Src="images/chemical.svg" Height="32"></MudImage>
+                    <MudText Typo="Typo.body1" Class="pb-0">Chemické látky a směsi</MudText>
+                </MudCardContent>
+                        
+                <MudCardContent Class="d-flex gap-4 align-center">
+                    <MudImage Src="images/czech.svg" Class="mr-2"></MudImage>
+                    <MudButton Href="#"
+                               Target="_blank"
+                               Variant="Variant.Text"
+                               StartIcon="@Icons.Material.Filled.Info"
+                               Style="text-transform:none"
+                               Size="Size.Small"
+                               Disabled=@disabled>
+                        Zjistit více
+                    </MudButton>
+                    <MudButton Variant="Variant.Outlined">Objednat</MudButton>
+                </MudCardContent>
+            </MudCard>
+        </MudItem> 
+        
+        <MudItem xs="6">
+            <MudCard Outlined="true" Class="d-flex gap-4 justify-space-between">
+                <MudCardContent Class="d-flex gap-4 align-center">
+                    <MudImage Src="images/chemical.svg" Height="32"></MudImage>
+                    <MudText Typo="Typo.body1" Class="pb-0">Chemické látky a směsi</MudText>
+                </MudCardContent>
+                                            
+                <MudCardContent Class="d-flex gap-4 align-center">
+                    <MudImage Src="images/english.svg" Class="mr-2"></MudImage>
+                    <MudButton Href="#"
+                               Target="_blank"
+                               Variant="Variant.Text"
+                               StartIcon="@Icons.Material.Filled.Info"
+                               Style="text-transform:none"
+                               Size="Size.Small"
+                               Disabled=@disabled>
+                        Zjistit více
+                    </MudButton>
+                    <MudButton Variant="Variant.Outlined">Objednat</MudButton>
+                </MudCardContent>
+            </MudCard>
+        </MudItem> 
+        
+        <MudItem xs="6">
+            <MudCard Outlined="true" Class="d-flex gap-4 justify-space-between">
+                <MudCardContent Class="d-flex gap-4 align-center">
+                    <MudImage Src="images/chemical.svg" Height="32"></MudImage>
+                    <MudText Typo="Typo.body1" Class="pb-0">Chemické látky a směsi</MudText>
+                </MudCardContent>
+                                                     
+                <MudCardContent Class="d-flex gap-4 align-center">
+                    <MudImage Src="images/germany.svg" Class="mr-2"></MudImage>
+                    <MudButton Href="#"
+                               Target="_blank"
+                               Variant="Variant.Text"
+                               StartIcon="@Icons.Material.Filled.Info"
+                               Style="text-transform:none"
+                               Size="Size.Small"
+                               Disabled=@disabled>
+                        Zjistit více
+                    </MudButton>
+                    <MudButton Variant="Variant.Outlined">Objednat</MudButton>
+                </MudCardContent>
+            </MudCard>
+        </MudItem> 
+        
+        <MudItem xs="6">
+                    <MudCard Outlined="true" Class="d-flex gap-4 justify-space-between">
+                        <MudCardContent Class="d-flex gap-4 align-center">
+                            <MudImage Src="images/aid.svg" Height="32"></MudImage>
+                            <MudText Typo="Typo.body1" Class="pb-0">První pomoc</MudText>
+                        </MudCardContent>
+                                                             
+                        <MudCardContent Class="d-flex gap-4 align-center">
+                            <MudImage Src="images/czech.svg" Class="mr-2"></MudImage>
+                            <MudButton Href="#"
+                                       Target="_blank"
+                                       Variant="Variant.Text"
+                                       StartIcon="@Icons.Material.Filled.Info"
+                                       Style="text-transform:none"
+                                       Size="Size.Small"
+                                       Disabled=@disabled>
+                                Zjistit více
+                            </MudButton>
+                            <MudButton Variant="Variant.Outlined">Objednat</MudButton>
+                        </MudCardContent>
+                    </MudCard>
+        </MudItem> 
     
-        <MudCardContent Class="d-flex gap-4 align-center">
-            <MudButton Href="#"
-                       Target="_blank"
-                       Variant="Variant.Text"
-                       StartIcon="@Icons.Material.Filled.Info"
-                       Style="text-transform:none"
-                       Size="Size.Small"
-                       Disabled=@disabled>
-                Detail
-            </MudButton>
-            <MudButton Variant="Variant.Outlined" StartIcon="@Icons.Material.Filled.Add">Přidat</MudButton>
-        </MudCardContent>
-    </MudCard>
+    <MudItem xs="6">
+                <MudCard Outlined="true" Class="d-flex gap-4 justify-space-between">
+                    <MudCardContent Class="d-flex gap-4 align-center">
+                        <MudImage Src="images/aid.svg" Height="32"></MudImage>
+                        <MudText Typo="Typo.body1" Class="pb-0">První pomoc</MudText>
+                    </MudCardContent>
+                                                         
+                    <MudCardContent Class="d-flex gap-4 align-center">
+                        <MudImage Src="images/english.svg" Class="mr-2"></MudImage>
+                        <MudButton Href="#"
+                                   Target="_blank"
+                                   Variant="Variant.Text"
+                                   StartIcon="@Icons.Material.Filled.Info"
+                                   Style="text-transform:none"
+                                   Size="Size.Small"
+                                   Disabled=@disabled>
+                            Zjistit více
+                        </MudButton>
+                        <MudButton Variant="Variant.Outlined">Objednat</MudButton>
+                    </MudCardContent>
+                </MudCard>
+    </MudItem> 
+    
+    <MudItem xs="6">
+                <MudCard Outlined="true" Class="d-flex gap-4 justify-space-between">
+                    <MudCardContent Class="d-flex gap-4 align-center">
+                        <MudImage Src="images/aid.svg" Height="32"></MudImage>
+                        <MudText Typo="Typo.body1" Class="pb-0">První pomoc</MudText>
+                    </MudCardContent>
+                                                         
+                    <MudCardContent Class="d-flex gap-4 align-center">
+                        <MudImage Src="images/germany.svg" Class="mr-2"></MudImage>
+                        <MudButton Href="#"
+                                   Target="_blank"
+                                   Variant="Variant.Text"
+                                   StartIcon="@Icons.Material.Filled.Info"
+                                   Style="text-transform:none"
+                                   Size="Size.Small"
+                                   Disabled=@disabled>
+                            Zjistit více
+                        </MudButton>
+                        <MudButton Variant="Variant.Outlined">Objednat</MudButton>
+                    </MudCardContent>
+                </MudCard>
+    </MudItem> 
+    
+    <MudItem xs="6">
+                <MudCard Outlined="true" Class="d-flex gap-4 justify-space-between">
+                    <MudCardContent Class="d-flex gap-4 align-center">
+                        <MudImage Src="images/home.svg" Height="32"></MudImage>
+                        <MudText Typo="Typo.body1" Class="pb-0">Homeoffice</MudText>
+                    </MudCardContent>
+                                                         
+                    <MudCardContent Class="d-flex gap-4 align-center">
+                        <MudImage Src="images/czech.svg" Class="mr-2"></MudImage>
+                        <MudButton Href="#"
+                                   Target="_blank"
+                                   Variant="Variant.Text"
+                                   StartIcon="@Icons.Material.Filled.Info"
+                                   Style="text-transform:none"
+                                   Size="Size.Small"
+                                   Disabled=@disabled>
+                            Zjistit více
+                        </MudButton>
+                        <MudButton Variant="Variant.Outlined">Objednat</MudButton>
+                    </MudCardContent>
+                </MudCard>
+    </MudItem> 
+    
+    <MudItem xs="6">
+                    <MudCard Outlined="true" Class="d-flex gap-4 justify-space-between">
+                        <MudCardContent Class="d-flex gap-4 align-center">
+                            <MudImage Src="images/home.svg" Height="32"></MudImage>
+                            <MudText Typo="Typo.body1" Class="pb-0">Homeoffice</MudText>
+                        </MudCardContent>
+                                                             
+                        <MudCardContent Class="d-flex gap-4 align-center">
+                            <MudImage Src="images/english.svg" Class="mr-2"></MudImage>
+                            <MudButton Href="#"
+                                       Target="_blank"
+                                       Variant="Variant.Text"
+                                       StartIcon="@Icons.Material.Filled.Info"
+                                       Style="text-transform:none"
+                                       Size="Size.Small"
+                                       Disabled=@disabled>
+                                Zjistit více
+                            </MudButton>
+                            <MudButton Variant="Variant.Outlined">Objednat</MudButton>
+                        </MudCardContent>
+                    </MudCard>
+    </MudItem> 
+    
+    <MudItem xs="6">
+                    <MudCard Outlined="true" Class="d-flex gap-4 justify-space-between">
+                        <MudCardContent Class="d-flex gap-4 align-center">
+                            <MudImage Src="images/home.svg" Height="32"></MudImage>
+                            <MudText Typo="Typo.body1" Class="pb-0">Homeoffice</MudText>
+                        </MudCardContent>
+                                                             
+                        <MudCardContent Class="d-flex gap-4 align-center">
+                            <MudImage Src="images/germany.svg" Class="mr-2"></MudImage>
+                            <MudButton Href="#"
+                                       Target="_blank"
+                                       Variant="Variant.Text"
+                                       StartIcon="@Icons.Material.Filled.Info"
+                                       Style="text-transform:none"
+                                       Size="Size.Small"
+                                       Disabled=@disabled>
+                                Zjistit více
+                            </MudButton>
+                            <MudButton Variant="Variant.Outlined">Objednat</MudButton>
+                        </MudCardContent>
+                    </MudCard>
+                </MudItem> 
+        
 
-    <MudCard Outlined="true" Class="mb-4 d-flex gap-4 justify-space-between">
-        <MudCardContent Class="d-flex gap-4 align-center">
-            <MudImage Src="images/chemical.svg" Height="32"></MudImage>
-            <MudText Typo="Typo.body1" Class="pb-0">Chemické látky a směsi</MudText>
-        </MudCardContent>
-    
-        <MudCardContent Class="d-flex gap-4 align-center">
-            <MudButton Href="#"
-                       Target="_blank"
-                       Variant="Variant.Text"
-                       StartIcon="@Icons.Material.Filled.Info"
-                       Style="text-transform:none"
-                       Size="Size.Small"
-                       Disabled=@disabled>
-                Detail
-            </MudButton>
-            <MudButton Variant="Variant.Outlined" StartIcon="@Icons.Material.Filled.Add">Přidat</MudButton>
-        </MudCardContent>
-    </MudCard>
-    
-    <MudCard Outlined="true" Class="mb-4 d-flex gap-4 justify-space-between">
-        <MudCardContent Class="d-flex gap-4 align-center">
-            <MudImage Src="images/truck.svg" Height="32"></MudImage>
-            <MudText Typo="Typo.body1" Class="pb-0">Řidiči</MudText>
-        </MudCardContent>
-        
-        <MudCardContent Class="d-flex gap-4 align-center">
-            <MudButton Href="#"
-                       Target="_blank"
-                       Variant="Variant.Text"
-                       StartIcon="@Icons.Material.Filled.Info"
-                       Style="text-transform:none"
-                       Size="Size.Small"
-                       Disabled=@disabled>
-                Detail
-            </MudButton>
-            <MudButton Variant="Variant.Outlined" StartIcon="@Icons.Material.Filled.Add">Přidat</MudButton>
-        </MudCardContent>
-    </MudCard>
-    
-    <MudCard Outlined="true" Class="mb-4 d-flex gap-4 justify-space-between">
-        <MudCardContent Class="d-flex gap-4 align-center">
-            <MudImage Src="images/home.svg" Height="32"></MudImage>
-            <MudText Typo="Typo.body1" Class="pb-0">Home office</MudText>
-        </MudCardContent>
-        
-        <MudCardContent Class="d-flex gap-4 align-center">
-            <MudButton Href="#"
-                       Target="_blank"
-                       Variant="Variant.Text"
-                       StartIcon="@Icons.Material.Filled.Info"
-                       Style="text-transform:none"
-                       Size="Size.Small"
-                       Disabled=@disabled>
-                Detail
-            </MudButton>
-            <MudButton Variant="Variant.Outlined" StartIcon="@Icons.Material.Filled.Add">Přidat</MudButton>
-        </MudCardContent>
-    </MudCard>
-    
-    <MudCard Outlined="true" Class="mb-4 d-flex gap-4 justify-space-between">
-        <MudCardContent Class="d-flex gap-4 align-center">
-            <MudImage Src="images/lift.svg" Height="32"></MudImage>
-            <MudText Typo="Typo.body1" Class="pb-0">Nízkozdvihy</MudText>
-        </MudCardContent>
-        
-        <MudCardContent Class="d-flex gap-4 align-center">
-            <MudButton Href="#"
-                       Target="_blank"
-                       Variant="Variant.Text"
-                       StartIcon="@Icons.Material.Filled.Info"
-                       Style="text-transform:none"
-                       Size="Size.Small"
-                       Disabled=@disabled>
-                Detail
-            </MudButton>
-            <MudButton Variant="Variant.Outlined" StartIcon="@Icons.Material.Filled.Add">Přidat</MudButton>
-        </MudCardContent>
-    </MudCard>
-    
-    <MudCard Outlined="true" Class="mb-4 d-flex gap-4 justify-space-between">
-        <MudCardContent Class="d-flex gap-4 align-center">
-            <MudImage Src="images/aid.svg" Height="32"></MudImage>
-            <MudText Typo="Typo.body1" Class="pb-0">První pomoc</MudText>
-        </MudCardContent>
-        
-        <MudCardContent Class="d-flex gap-4 align-center">
-            <MudButton Href="#"
-                       Target="_blank"
-                       Variant="Variant.Text"
-                       StartIcon="@Icons.Material.Filled.Info"
-                       Style="text-transform:none"
-                       Size="Size.Small"
-                       Disabled=@disabled>
-                Detail
-            </MudButton>
-            <MudButton Variant="Variant.Outlined" StartIcon="@Icons.Material.Filled.Add">Přidat</MudButton>
-        </MudCardContent>
-    </MudCard>
+    </MudGrid>
 </div>
 
-<MudDivider Class="mb-4"></MudDivider>
-
-<MudGrid>
-    <MudItem xs="6">
-        <MudText Typo="Typo.overline" Class="mb-4 mt-12">NÁVODY</MudText>
-        <MudCard Class="mb-4">
-            <MudCardContent Class="d-flex flex-column gap-1">
-                <MudLink>Návody pro admistrátora</MudLink>
-                <MudLink>Návody správy pozic</MudLink>
-                <MudLink>Návody směrnic</MudLink>
-            </MudCardContent>
-        </MudCard>
+<MudGrid Class="mb-4 mt-4">
+    <MudItem xs="12">
+        <MudText Typo="Typo.overline" Class="pb-2">NÁVODY</MudText>
+        <div class="d-flex flex-column">
+            <MudLink>Návody pro admistrátora</MudLink>
+            <MudLink>Návody správy pozic</MudLink>
+            <MudLink>Návody směrnic</MudLink>
+        </div>
     </MudItem>
     
-    <MudItem xs="6">
-        <MudText Typo="Typo.overline" Class="mb-4 mt-12">KONTAKT</MudText>
-        <MudCard Class="mb-4">
-            <MudCardContent Class="d-flex flex-column gap-1">
-                <MudText Typo="Typo.body2" Class="pb-2">Administátor E-learningu</MudText>
-                <MudLink>+420 737 205 107</MudLink>
-                <MudLink>elearning@civop.cz</MudLink>
-            </MudCardContent>
-        </MudCard>
+    <MudDivider />
+    
+    <MudItem xs="12">
+        <MudText Typo="Typo.overline" Class="pb-2">ADMINISTRÁTOR E-LEARNINGU</MudText>
+        <div class="d-flex flex-row">
+            <MudLink Class="mr-4">tel.: +420 737 205 107</MudLink>
+            <MudLink>e-mail: elearning@civop.cz</MudLink>
+        </div>
     </MudItem>
     
 </MudGrid>
 
 @code{
     bool disabled = false;
+}
+
+@code{ 
+    private bool arrows = true;
+    private bool bullets = true;
+    private bool enableSwipeGesture = true;
+    private bool autocycle = true;
+    private Transition transition = Transition.Slide;
 }
