@@ -5,15 +5,20 @@
 <MudSnackbarProvider/>
 
 <MudLayout>
-    <MudAppBar Elevation="0" Color="Color.Primary">
-        <MudIconButton Class="pr-8" Icon="@Icons.Material.Filled.Menu" Color="Color.Inherit" Edge="Edge.Start" OnClick="@((e) => DrawerToggle())"/>
-        <MudImage Src="images/civop_logo_white.svg" Width="140" Alt="Mony the dog" Class="pr-4"/>
+    <MudAppBar Elevation="25" Color="Color.Primary">
+        <MudIconButton Class="mr-8" Icon="@Icons.Material.Filled.Menu" Color="Color.Inherit" Edge="Edge.Start" OnClick="@((e) => DrawerToggle())"/>
+        <MudImage Src="images/Logo.svg" Alt="Logo Civop" Class="mr-6"/>
+        <MudImage Src="images/Title.svg" Alt="Logo Civop"/>
         <MudHidden Breakpoint="Breakpoint.SmAndDown">
         </MudHidden>
         <MudSpacer/>
         
         <MudHidden Breakpoint="Breakpoint.SmAndDown">
-            <MudText Class="pr-8">Scania Czech Republic s.r.o.</MudText>
+            <MudPaper Class="mr-4">
+                <MudTooltip Text="Scania Czech Republic s.r.o." Color="Color.Primary" Placement="Placement.Bottom">
+                <MudImage Src="images/scania-logo.jpg" Height="34" Class="pt-2 pl-2 pr-2"></MudImage>
+                </MudTooltip>
+            </MudPaper>
         </MudHidden>
         
         <MudTooltip Text="Změna hesla" Color="Color.Primary" Placement="Placement.Bottom">

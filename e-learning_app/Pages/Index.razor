@@ -2,7 +2,7 @@
 
 <PageTitle>Civop - Klientská sekce</PageTitle>
 
-<MudCarousel Class="mud-width-full mb-8 rounded-lg"  Style="height:488px;" ShowArrows="@arrows" ShowBullets="false" EnableSwipeGesture="@enableSwipeGesture" AutoCycle="@autocycle" TData="object">
+<MudCarousel Class="mud-width-full mb-8 rounded-lg"  Style="height:488px" ShowArrows="@arrows" ShowBullets="false" EnableSwipeGesture="@enableSwipeGesture" AutoCycle="@autocycle" TData="object">
     <MudCarouselItem Transition="transition" Color="@Color.Primary">
         <MudCardMedia Image="images/info.jpg" Height="300" />
         <div class="d-flex gap-4 align-center flex-grow-1 ml-8 mt-6 mb-2">
@@ -10,7 +10,7 @@
             <MudText Typo="Typo.h5" Color="Color.Inherit">Informace o společnosti CIVOP s.r.o.</MudText>
         </div>
         <MudText Typo="Typo.body2" Style="max-width: 900px;" Color="Color.Inherit" Class="ml-8 mb-5">Vestibulum fermentum tortor id mi. Etiam sapien elit, consequat eget, tristique non, venenatis quis, ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</MudText>
-        <MudButton Variant="Variant.Outlined" Color="Color.Inherit" Class="ml-8">Zjistit více</MudButton>
+        <MudButton Variant="Variant.Filled" Color="Color.Secondary" Class="ml-8">Zjistit více</MudButton>
     </MudCarouselItem>
     
     <MudCarouselItem Transition="transition" Color="@Color.Primary">
@@ -20,7 +20,7 @@
                 <MudText Typo="Typo.h5" Color="Color.Inherit">První pomoc</MudText>
             </div>
         <MudText Typo="Typo.body2" Style="max-width: 900px;" Color="Color.Inherit" Class="ml-8 mb-5">Vestibulum fermentum tortor id mi. Etiam sapien elit, consequat eget, tristique non, venenatis quis, ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</MudText>
-            <MudButton Variant="Variant.Outlined" Color="Color.Inherit" Class="ml-8">Zjistit více</MudButton>
+            <MudButton Variant="Variant.Filled" Color="Color.Secondary" Class="ml-8">Zjistit více</MudButton>
             </MudCarouselItem>
     
     <MudCarouselItem Transition="transition" Color="@Color.Primary">
@@ -30,7 +30,7 @@
             <MudText Typo="Typo.h5" Color="Color.Inherit">Chemické látky a směsi</MudText>
         </div>
         <MudText Typo="Typo.body2" Style="max-width: 900px;" Color="Color.Inherit" Class="ml-8 mb-5">Vestibulum fermentum tortor id mi. Etiam sapien elit, consequat eget, tristique non, venenatis quis, ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</MudText>
-        <MudButton Variant="Variant.Outlined" Color="Color.Inherit" Class="ml-8">Zjistit více</MudButton>
+        <MudButton Variant="Variant.Filled" Color="Color.Secondary" Class="ml-8">Zjistit více</MudButton>
     </MudCarouselItem>
     
     <MudCarouselItem Transition="transition" Color="@Color.Primary">
@@ -40,7 +40,7 @@
             <MudText Typo="Typo.h5" Color="Color.Inherit">Práce ve výškách</MudText>
         </div>
         <MudText Typo="Typo.body2" Style="max-width: 900px;" Color="Color.Inherit" Class="ml-8 mb-5">Vestibulum fermentum tortor id mi. Etiam sapien elit, consequat eget, tristique non, venenatis quis, ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</MudText>
-        <MudButton Variant="Variant.Outlined" Color="Color.Inherit" Class="ml-8">Zjistit více</MudButton>
+        <MudButton Variant="Variant.Filled" Color="Color.Secondary" Class="ml-8">Zjistit více</MudButton>
     </MudCarouselItem>
     
     <MudCarouselItem Transition="transition" Color="@Color.Primary">
@@ -50,7 +50,7 @@
                 <MudText Typo="Typo.h5" Color="Color.Inherit">Homeoffice</MudText>
             </div>
         <MudText Typo="Typo.body2" Style="max-width: 900px;" Color="Color.Inherit" Class="ml-8 mb-5">Vestibulum fermentum tortor id mi. Etiam sapien elit, consequat eget, tristique non, venenatis quis, ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</MudText>
-            <MudButton Variant="Variant.Outlined" Color="Color.Inherit" Class="ml-8">Zjistit více</MudButton>
+            <MudButton Variant="Variant.Filled" Color="Color.Secondary" Class="ml-8">Zjistit více</MudButton>
         </MudCarouselItem>
 </MudCarousel>
 
@@ -120,8 +120,8 @@
     <MudText Typo="Typo.overline" Class="mb-4 mt-12">NABÍDKA MODULŮ</MudText>
 
     <MudGrid>
-        <MudItem xs="6">
-            <MudCard Outlined="true" Class="d-flex gap-4 justify-space-between">
+        <MudItem lg="6" sm="12" xs="12">
+            <MudCard Class="d-flex gap-4 justify-space-between">
                 <MudCardContent Class="d-flex gap-4 align-center">
                     <MudImage Src="images/worker_black.svg" Height="32"></MudImage>
                     <MudText Typo="Typo.body1" Class="pb-0">Bezpečnost práce</MudText>
@@ -135,8 +135,8 @@
             </MudCard>
         </MudItem> 
         
-        <MudItem xs="6">
-            <MudCard Outlined="true" Class="d-flex gap-4 justify-space-between">
+        <MudItem lg="6" sm="12" xs="12">
+            <MudCard Class="d-flex gap-4 justify-space-between">
                 <MudCardContent Class="d-flex gap-4 align-center">
                     <MudImage Src="images/fire_black.svg" Height="32"></MudImage>
                     <MudText Typo="Typo.body1" Class="pb-0">Požární ochrana</MudText>
@@ -150,8 +150,8 @@
             </MudCard>
         </MudItem>
         
-        <MudItem xs="6">
-            <MudCard Outlined="true" Class="d-flex gap-4 justify-space-between">
+        <MudItem lg="6" sm="12" xs="12">
+            <MudCard Class="d-flex gap-4 justify-space-between">
                 <MudCardContent Class="d-flex gap-4 align-center">
                     <MudImage Src="images/truck.svg" Height="32"></MudImage>
                     <MudText Typo="Typo.body1" Class="pb-0">Řidiči</MudText>
@@ -165,8 +165,8 @@
             </MudCard>
         </MudItem> 
         
-        <MudItem xs="6">
-            <MudCard Outlined="true" Class="d-flex gap-4 justify-space-between">
+        <MudItem lg="6" sm="12" xs="12">
+            <MudCard Class="d-flex gap-4 justify-space-between">
                 <MudCardContent Class="d-flex gap-4 align-center">
                     <MudImage Src="images/truck.svg" Height="32"></MudImage>
                     <MudText Typo="Typo.body1" Class="pb-0">Řidiči</MudText>
@@ -181,8 +181,8 @@
             </MudCard>
         </MudItem> 
         
-        <MudItem xs="6">
-            <MudCard Outlined="true" Class="d-flex gap-4 justify-space-between">
+        <MudItem lg="6" sm="12" xs="12">
+            <MudCard Class="d-flex gap-4 justify-space-between">
                 <MudCardContent Class="d-flex gap-4 align-center">
                     <MudImage Src="images/truck.svg" Height="32"></MudImage>
                     <MudText Typo="Typo.body1" Class="pb-0">Řidiči</MudText>
@@ -197,8 +197,8 @@
             </MudCard>
         </MudItem> 
         
-        <MudItem xs="6">
-            <MudCard Outlined="true" Class="d-flex gap-4 justify-space-between">
+        <MudItem lg="6" sm="12" xs="12">
+            <MudCard Class="d-flex gap-4 justify-space-between">
                 <MudCardContent Class="d-flex gap-4 align-center">
                     <MudImage Src="images/chemical.svg" Height="32"></MudImage>
                     <MudText Typo="Typo.body1" Class="pb-0">Chemické látky a směsi</MudText>
@@ -213,8 +213,8 @@
             </MudCard>
         </MudItem> 
         
-        <MudItem xs="6">
-            <MudCard Outlined="true" Class="d-flex gap-4 justify-space-between">
+        <MudItem lg="6" sm="12" xs="12">
+            <MudCard Class="d-flex gap-4 justify-space-between">
                 <MudCardContent Class="d-flex gap-4 align-center">
                     <MudImage Src="images/chemical.svg" Height="32"></MudImage>
                     <MudText Typo="Typo.body1" Class="pb-0">Chemické látky a směsi</MudText>
@@ -229,8 +229,8 @@
             </MudCard>
         </MudItem> 
         
-        <MudItem xs="6">
-            <MudCard Outlined="true" Class="d-flex gap-4 justify-space-between">
+        <MudItem lg="6" sm="12" xs="12">
+            <MudCard Class="d-flex gap-4 justify-space-between">
                 <MudCardContent Class="d-flex gap-4 align-center">
                     <MudImage Src="images/chemical.svg" Height="32"></MudImage>
                     <MudText Typo="Typo.body1" Class="pb-0">Chemické látky a směsi</MudText>
@@ -245,8 +245,8 @@
             </MudCard>
         </MudItem> 
         
-        <MudItem xs="6">
-                    <MudCard Outlined="true" Class="d-flex gap-4 justify-space-between">
+        <MudItem lg="6" sm="12" xs="12">
+                    <MudCard Class="d-flex gap-4 justify-space-between">
                         <MudCardContent Class="d-flex gap-4 align-center">
                             <MudImage Src="images/aid.svg" Height="32"></MudImage>
                             <MudText Typo="Typo.body1" Class="pb-0">První pomoc</MudText>
@@ -261,8 +261,8 @@
                     </MudCard>
         </MudItem> 
     
-    <MudItem xs="6">
-                <MudCard Outlined="true" Class="d-flex gap-4 justify-space-between">
+    <MudItem lg="6" sm="12" xs="12">
+                <MudCard Class="d-flex gap-4 justify-space-between">
                     <MudCardContent Class="d-flex gap-4 align-center">
                         <MudImage Src="images/aid.svg" Height="32"></MudImage>
                         <MudText Typo="Typo.body1" Class="pb-0">První pomoc</MudText>
@@ -277,8 +277,8 @@
                 </MudCard>
     </MudItem> 
     
-    <MudItem xs="6">
-                <MudCard Outlined="true" Class="d-flex gap-4 justify-space-between">
+    <MudItem lg="6" sm="12" xs="12">
+                <MudCard Class="d-flex gap-4 justify-space-between">
                     <MudCardContent Class="d-flex gap-4 align-center">
                         <MudImage Src="images/aid.svg" Height="32"></MudImage>
                         <MudText Typo="Typo.body1" Class="pb-0">První pomoc</MudText>
@@ -293,8 +293,8 @@
                 </MudCard>
     </MudItem> 
     
-    <MudItem xs="6">
-                <MudCard Outlined="true" Class="d-flex gap-4 justify-space-between">
+    <MudItem lg="6" sm="12" xs="12">
+                <MudCard Class="d-flex gap-4 justify-space-between">
                     <MudCardContent Class="d-flex gap-4 align-center">
                         <MudImage Src="images/home.svg" Height="32"></MudImage>
                         <MudText Typo="Typo.body1" Class="pb-0">Homeoffice</MudText>
@@ -309,8 +309,8 @@
                 </MudCard>
     </MudItem> 
     
-    <MudItem xs="6">
-                    <MudCard Outlined="true" Class="d-flex gap-4 justify-space-between">
+    <MudItem lg="6" sm="12" xs="12">
+                    <MudCard Class="d-flex gap-4 justify-space-between">
                         <MudCardContent Class="d-flex gap-4 align-center">
                             <MudImage Src="images/home.svg" Height="32"></MudImage>
                             <MudText Typo="Typo.body1" Class="pb-0">Homeoffice</MudText>
@@ -325,8 +325,8 @@
                     </MudCard>
     </MudItem> 
     
-    <MudItem xs="6">
-                    <MudCard Outlined="true" Class="d-flex gap-4 justify-space-between">
+    <MudItem lg="6" sm="12" xs="12">
+                    <MudCard Class="d-flex gap-4 justify-space-between">
                         <MudCardContent Class="d-flex gap-4 align-center">
                             <MudImage Src="images/home.svg" Height="32"></MudImage>
                             <MudText Typo="Typo.body1" Class="pb-0">Homeoffice</MudText>
